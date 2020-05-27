@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   # s.license    = { :type => "MIT", :file => "LICENSE" }
   s.authors      = { "Zimplifica" => "dsanchez@zimplifica.com" }
   s.platforms    = { :ios => "11.0" }
-  s.source       = { git: package[:repository][:url] }
+  s.source       = { :git => "https://github.com/jodafm/react-native-zimple-hypertrack.git" }
 
   s.source_files = "ios/*.{h,m}"
   s.requires_arc = true
