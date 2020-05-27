@@ -2,7 +2,7 @@
 #import <React/RCTLog.h>
 #import <React/RCTEventDispatcher.h>
 
-@interface HyperTrack ()
+@interface ZimpleHypertrack ()
 
 @property(nonatomic) HTSDK *hyperTrack;
 
