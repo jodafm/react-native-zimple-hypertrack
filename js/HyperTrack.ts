@@ -1,7 +1,11 @@
-"use strict";
-
+import { NativeEventEmitter, NativeModules } from "react-native";
 import EventEmitter from "./EventEmitter";
 import { Error } from "./CriticalErrors";
+import { HyperTrackComponent } from "./HyperTrackComponent";
+
+if (!NativeModules.ZimpleHypertrack) {
+  throw new Error("NativeModules.ZimpleHypertrack is undefined");
+}
 
 const HyperTrack = require("react-native").NativeModules.ZimpleHypertrack;
 
@@ -50,8 +54,8 @@ class HyperTrackAPI {
    * @param {function} onStop - Tracking state callback for stop event.
    */
   registerTrackingListeners(
-    component: Object,
-    onError: (error: ?Error) => void,
+    component: HyperTrackComponent,
+    onError: (error?: Error) => void,
     onStart: () => void,
     onStop: () => void
   ) {
@@ -77,7 +81,7 @@ class HyperTrackAPI {
    * Removes tracking state callbacks.
    * @param {Object} component - Instance of your component.
    */
-  unregisterTrackingListeners(component: Object) {
+  unregisterTrackingListeners(component: HyperTrackComponent) {
     component.onErrorHyperTrackSubscription &&
       component.onErrorHyperTrackSubscription.remove();
     component.onStartHyperTrackSubscription &&

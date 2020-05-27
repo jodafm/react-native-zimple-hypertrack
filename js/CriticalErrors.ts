@@ -15,17 +15,16 @@ export const AUTHORIZATION_FAILED = 2;
  */
 export const PERMISSION_DENIED = 3;
 
-
 /**
  * A base interface for errors in SDK.
  */
 export type Error = {
-    /**
-     * Code of SDK error from {@link GENERAL}, {@link INVALID_PUBLISHABLE_KEY}, {@link AUTHORIZATION_FAILED}, {@link PERMISSION_DENIED}.
-     */
-    code: number,
-    /**
-     * Message with additional information. Optional.
-     */
-    message: ?string
+  /**
+   * Code of SDK error from {@link GENERAL}, {@link INVALID_PUBLISHABLE_KEY}, {@link AUTHORIZATION_FAILED}, {@link PERMISSION_DENIED}.
+   */
+  code: number;
+  /**
+   * Message with additional information. Optional.
+   */
+  message?: string;
 };
