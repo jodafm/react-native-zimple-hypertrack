@@ -2,6 +2,6 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
 
-@interface ZimpleHypertrack : RCTEventEmitter <RadarDelegate, RCTBridgeModule>
+@interface ZimpleHypertrack : RCTEventEmitter <RCTBridgeModule>
 
 @end
