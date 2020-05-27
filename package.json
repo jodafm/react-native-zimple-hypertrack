@@ -3,7 +3,7 @@
   "title": "React Native Zimple Hypertrack",
   "version": "1.0.0",
   "description": "TODO",
-  "main": "index.js",
+  "main": "./js/index.js",
   "files": [
     "README.md",
     "android",
