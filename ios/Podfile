@@ -1,0 +1,6 @@
+platform :ios, '11.0'
+
+target 'ZimpleHypertrack' do
+  use_frameworks!
+  pod 'HyperTrack/Objective-C', '4.0.1'
+end

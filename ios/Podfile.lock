@@ -1,0 +1,25 @@
+PODS:
+  - GRDB.swift (4.4.0):
+    - GRDB.swift/standard (= 4.4.0)
+  - GRDB.swift/standard (4.4.0)
+  - HyperTrack/Objective-C (4.0.1):
+    - GRDB.swift (= 4.4.0)
+    - HyperTrack/Swift
+  - HyperTrack/Swift (4.0.1):
+    - GRDB.swift (= 4.4.0)
+
+DEPENDENCIES:
+  - HyperTrack/Objective-C (= 4.0.1)
+
+SPEC REPOS:
+  trunk:
+    - GRDB.swift
+    - HyperTrack
+
+SPEC CHECKSUMS:
+  GRDB.swift: 4f9b6e7efc9470426f6a6de10ec1fee798ff7e43
+  HyperTrack: 55d6c6eeb29dae6e989b42931c8db6c567922c4e
+
+PODFILE CHECKSUM: c4e50357db5d5ea253022d59fbca505c8a8d7057
+
+COCOAPODS: 1.9.1
